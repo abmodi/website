@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset="UTF-8")
+		title Abhishek Modi
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css")
+		link(rel="stylesheet" href="/stylesheets/style.css")
+	body
+		nav#myNavbar.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
+			div.container
+				div.navbar-header
+				button.navbar-toggle(data-toggle="collapse", data-target="#navbarCollapse", type="button")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href="/") Abhishek Modi's Profile
+				div.collapse.navbar-collapse#navbarCollapse
+					ul.nav.navbar-nav.navbar-right
+						li(class= url === "about" ? "active":"")
+							a(href="/") About
+						li(class= url==="resume"?"active":"")
+							a(href="/resume") Resume
+						li(class= url==="portfolio"?"active":"")
+							a(href="/portfolio") Portfolio
+						li(class= url==="blog"?"active":"")
+							a(href="http://blog.abmodi.com") Blog
+						li(class= url==="contact"?"active":"")
+							a(href="/contact") Contact	
+
+		
+		div.jumbotron
+			div.container
+				div.row
+					div.col-md-3.col-xs-12
+						img.img-responsive.img-circle(src="images/abmodi.jpg", alt="Abhishek Modi")
+					div.col-md-9.col-xs-12
+						h2 A bit about myself...
+						p My name is Abhishek Modi and I am Computer Scientist at Adobe Systems. I have got B.Tech from IIT-BHU
+
+		div.container.content
+			block content
+
+		footer
+			div.container
+				© 2015 Abhishek Modi

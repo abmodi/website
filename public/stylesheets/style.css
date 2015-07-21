@@ -1,0 +1,25 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+footer {
+    padding-top: 100px;
+}
+
+.content {
+	min-height: 500px;
+}
+.progress {
+    height: 10px;
+}
+
+.skills {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#map-container {
+	height: 300px;
+}
